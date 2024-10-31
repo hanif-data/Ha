@@ -1,0 +1,65 @@
+/* Styling Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Flex Items (Kartu Produk) */
+.product-card {
+    flex-grow: 1;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.buy-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+    }
+    .product-card {
+        max-width: 100%;
+    }
+}
